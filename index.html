@@ -1,3 +1,14 @@
+<!--
+=========================================================
+SISTEMA: R-Proposta Digital - Cadastro Fylipe
+DESENVOLVEDOR: Juan Pablo de Carvalho Moura Furtado
+AUTOR: Juan Pablo de Carvalho Moura Furtado
+INÍCIO DO DESENVOLVIMENTO: 2026
+IDENTIFICAÇÃO: RESOLVE-RPD-FYLIPE-JP-2026
+VERSÃO: 1.1
+Código desenvolvido originalmente por Juan Pablo de Carvalho Moura Furtado.
+=========================================================
+-->
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -1967,7 +1978,7 @@
     if(!options.skipCurrentAttachments) await appendAttachments(outDoc);
 
     outDoc.setTitle((pdfFileName || getPdfFileName()).replace(/\.pdf$/i,''));
-    outDoc.setProducer('R-Proposta Digital v5.6.1 - PDF final editável');
+    outDoc.setProducer('R-Proposta Digital - Cadastro Fylipe v1.1 - PDF final editável');
 
     const payload = await buildEditablePayloadV342(seq, corePageCount, outDoc.getPageCount(), pdfFileName, options);
     const jsonText = JSON.stringify(payload);
